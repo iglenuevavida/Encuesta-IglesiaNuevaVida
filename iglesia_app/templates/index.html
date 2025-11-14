@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center mt-5">
+  <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" width="70">
+  <h1 class="title mb-2">Iglesia Nueva Vida</h1>
+
+  <p class="lead mt-3">Seleccioná tu opción para continuar</p>
+
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+    <a href="{{ url_for('pastor_login') }}" class="btn btn-primary btn-lg btn-option me-sm-3">Soy Pastor/Líder</a>
+    <a href="{{ url_for('member_survey') }}" class="btn btn-outline-primary btn-lg btn-option">Soy Miembro</a>
+  </div>
+</div>
+{% endblock %}

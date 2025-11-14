@@ -1,0 +1,105 @@
+:root {
+  --verde-claro: #bfecc7;
+  --verde-oscuro: #2b8a57;
+  --celeste: #e6f7ff;
+  --blanco: #ffffff;
+}
+
+/* ===== Fondo general ===== */
+body.bg-soft {
+  background: linear-gradient(180deg, var(--celeste) 0%, #ffffff 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Barra superior o navbar ===== */
+.nav-custom {
+  background: var(--blanco);
+  border-bottom: 1px solid #e9f3ef;
+}
+
+.logo-small {
+  height: 40px !important;
+  width: auto !important;
+  object-fit: contain;
+}
+
+
+.logo-mid {
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Contenedor del logo + título */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea a la izquierda */
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20px; /* Pequeño margen izquierdo */
+}
+
+/* Imagen del logo */
+.logo-container img {
+  max-width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Texto “Iglesia Nueva Vida” */
+.title {
+  color: #1b7d32;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Botones de opciones */
+.btn-option {
+  min-width: 220px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+
+.btn-option:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(11, 90, 60, 0.15);
+}
+
+/* ===== Tarjetas ===== */
+.card-custom {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Footer ===== */
+.footer-custom {
+  background: transparent;
+  color: #6c757d;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ===== Tablas (panel pastores/líderes) ===== */
+.table-head {
+  background: linear-gradient(90deg, #f0fff4, #f8fff9);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
