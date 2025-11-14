@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login de Pastor/Líder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #c9f0dd, #e3f7ef);
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: 350px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #146c43;
+      margin-bottom: 20px;
+    }
+    .password-container {
+      position: relative;
+    }
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #198754;
+    }
+    .btn-success {
+      background-color: #198754;
+      border: none;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .btn-success:hover {
+      background-color: #146c43;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Login de Pastor/Líder</h2>
+    <form action="/pastor_login" method="post">
+      <div class="mb-3">
+        <input type="text" name="usuario" class="form-control" placeholder="Nombre completo" required>
+      </div>
+
+      <div class="mb-3 password-container">
+        <input type="password" name="contraseña" id="password" class="form-control" placeholder="Contraseña" required>
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <button type="submit" class="btn btn-success">Ingresar</button>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const input = document.getElementById('password');
+      input.type = input.type === 'password' ? 'text' : 'password';
+    }
+  </script>
+</body>
+</html>
+
